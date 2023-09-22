@@ -1,0 +1,4 @@
+set context persistent nowriters   
+add volume c: alias someAlias   
+create   
+expose %someAlias% z: 

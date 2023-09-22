@@ -1,0 +1,78 @@
+# Nmap 7.94 scan initiated Thu Sep  7 22:06:39 2023 as: nmap -p80,135,139,443,445,3306,5000,5040,5985,5986,7680,47001,49664,49665,49666,49667,49668,49669,49670 -sCV -oN lognmap 10.10.10.239
+Nmap scan report for 10.10.10.239
+Host is up (0.11s latency).
+
+PORT      STATE SERVICE     VERSION
+80/tcp    open  http        Apache httpd 2.4.46 ((Win64) OpenSSL/1.1.1j PHP/7.3.27)
+|_http-title: Voting System using PHP
+|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+135/tcp   open  msrpc       Microsoft Windows RPC
+139/tcp   open  netbios-ssn Microsoft Windows netbios-ssn
+443/tcp   open  ssl/http    Apache httpd 2.4.46 (OpenSSL/1.1.1j PHP/7.3.27)
+| tls-alpn: 
+|_  http/1.1
+|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27
+| ssl-cert: Subject: commonName=staging.love.htb/organizationName=ValentineCorp/stateOrProvinceName=m/countryName=in
+| Not valid before: 2021-01-18T14:00:16
+|_Not valid after:  2022-01-18T14:00:16
+|_http-title: 403 Forbidden
+|_ssl-date: TLS randomness does not represent time
+445/tcp   open  @n´U      Windows 10 Pro 19042 microsoft-ds (workgroup: WORKGROUP)
+3306/tcp  open  mysql?
+5000/tcp  open  http        Apache httpd 2.4.46 (OpenSSL/1.1.1j PHP/7.3.27)
+|_http-title: 403 Forbidden
+|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27
+5040/tcp  open  unknown
+5985/tcp  open  http        Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+5986/tcp  open  ssl/http    Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+| tls-alpn: 
+|_  http/1.1
+|_http-server-header: Microsoft-HTTPAPI/2.0
+| ssl-cert: Subject: commonName=LOVE
+| Subject Alternative Name: DNS:LOVE, DNS:Love
+| Not valid before: 2021-04-11T14:39:19
+|_Not valid after:  2024-04-10T14:39:19
+|_ssl-date: 2023-09-08T03:31:17+00:00; +21m33s from scanner time.
+|_http-title: Not Found
+7680/tcp  open  pando-pub?
+47001/tcp open  http        Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49664/tcp open  msrpc       Microsoft Windows RPC
+49665/tcp open  msrpc       Microsoft Windows RPC
+49666/tcp open  msrpc       Microsoft Windows RPC
+49667/tcp open  msrpc       Microsoft Windows RPC
+49668/tcp open  msrpc       Microsoft Windows RPC
+49669/tcp open  msrpc       Microsoft Windows RPC
+49670/tcp open  msrpc       Microsoft Windows RPC
+Service Info: Hosts: www.example.com, LOVE, www.love.htb; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+|_clock-skew: mean: 2h06m34s, deviation: 3h30m03s, median: 21m32s
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-time: 
+|   date: 2023-09-08T03:31:08
+|_  start_date: N/A
+| smb-os-discovery: 
+|   OS: Windows 10 Pro 19042 (Windows 10 Pro 6.3)
+|   OS CPE: cpe:/o:microsoft:windows_10::-
+|   Computer name: Love
+|   NetBIOS computer name: LOVE\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2023-09-07T20:31:07-07:00
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep  7 22:09:46 2023 -- 1 IP address (1 host up) scanned in 186.57 seconds

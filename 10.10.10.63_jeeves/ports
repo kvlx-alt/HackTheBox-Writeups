@@ -1,0 +1,4 @@
+# Nmap 7.94 scan initiated Tue Sep  5 19:35:33 2023 as: nmap -p- --open --min-rate 5000 -n -Pn -sS -oG ports 10.10.10.63
+Host: 10.10.10.63 ()	Status: Up
+Host: 10.10.10.63 ()	Ports: 80/open/tcp//http///, 135/open/tcp//msrpc///, 445/open/tcp//microsoft-ds///, 50000/open/tcp//ibm-db2///	Ignored State: filtered (65531)
+# Nmap done at Tue Sep  5 19:36:13 2023 -- 1 IP address (1 host up) scanned in 39.75 seconds

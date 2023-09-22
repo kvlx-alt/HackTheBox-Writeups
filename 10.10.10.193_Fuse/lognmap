@@ -1,0 +1,58 @@
+# Nmap 7.94 scan initiated Tue Aug 29 19:20:27 2023 as: nmap -sCV -p53,80,88,135,139,389,445,464,593,636,3268,3269,5985,9389,49666,49667,49675,49676,49679,49695,49752 -oN lognmap 10.10.10.193
+Nmap scan report for 10.10.10.193
+Host is up (0.14s latency).
+
+PORT      STATE    SERVICE      VERSION
+53/tcp    filtered domain
+80/tcp    open     http         Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: Site doesn't have a title (text/html).
+88/tcp    open     kerberos-sec Microsoft Windows Kerberos (server time: 2023-08-30 00:33:48Z)
+135/tcp   open     msrpc        Microsoft Windows RPC
+139/tcp   open     netbios-ssn  Microsoft Windows netbios-ssn
+389/tcp   open     ldap         Microsoft Windows Active Directory LDAP (Domain: fabricorp.local, Site: Default-First-Site-Name)
+445/tcp   open     	Го       Windows Server 2016 Standard 14393 microsoft-ds (workgroup: FABRICORP)
+464/tcp   open     kpasswd5?
+593/tcp   open     ncacn_http   Microsoft Windows RPC over HTTP 1.0
+636/tcp   open     tcpwrapped
+3268/tcp  open     ldap         Microsoft Windows Active Directory LDAP (Domain: fabricorp.local, Site: Default-First-Site-Name)
+3269/tcp  open     tcpwrapped
+5985/tcp  open     http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+9389/tcp  open     mc-nmf       .NET Message Framing
+49666/tcp open     msrpc        Microsoft Windows RPC
+49667/tcp open     msrpc        Microsoft Windows RPC
+49675/tcp filtered unknown
+49676/tcp open     msrpc        Microsoft Windows RPC
+49679/tcp open     msrpc        Microsoft Windows RPC
+49695/tcp open     msrpc        Microsoft Windows RPC
+49752/tcp open     msrpc        Microsoft Windows RPC
+Service Info: Host: FUSE; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb-os-discovery: 
+|   OS: Windows Server 2016 Standard 14393 (Windows Server 2016 Standard 6.3)
+|   Computer name: Fuse
+|   NetBIOS computer name: FUSE\x00
+|   Domain name: fabricorp.local
+|   Forest name: fabricorp.local
+|   FQDN: Fuse.fabricorp.local
+|_  System time: 2023-08-29T17:34:40-07:00
+|_clock-skew: mean: 2h33m00s, deviation: 4h02m30s, median: 12m59s
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled and required
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: required
+| smb2-time: 
+|   date: 2023-08-30T00:34:43
+|_  start_date: 2023-08-30T00:19:28
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug 29 19:22:21 2023 -- 1 IP address (1 host up) scanned in 113.89 seconds

@@ -1,0 +1,5 @@
+# Nmap 7.94 scan initiated Sat Sep  9 08:55:03 2023 as: nmap -p- --open --min-rate 5000 -n -Pn -sS -vvv -oG ports 10.10.11.106
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.11.106 ()	Status: Up
+Host: 10.10.11.106 ()	Ports: 80/open/tcp//http///, 135/open/tcp//msrpc///, 445/open/tcp//microsoft-ds///, 5985/open/tcp//wsman///	Ignored State: filtered (65531)
+# Nmap done at Sat Sep  9 08:55:29 2023 -- 1 IP address (1 host up) scanned in 26.58 seconds

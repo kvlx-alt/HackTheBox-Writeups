@@ -1,0 +1,2 @@
+# Nmap 7.94 scan initiated Wed Aug 30 20:25:53 2023 as: nmap -sC -sV -p135,5985,8080,29817,29820 -oN lognmap 10.10.10.204
+# Nmap done at Wed Aug 30 20:25:56 2023 -- 1 IP address (0 hosts up) scanned in 3.25 seconds

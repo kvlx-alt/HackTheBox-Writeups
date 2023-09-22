@@ -1,0 +1,65 @@
+# Nmap 7.94 scan initiated Tue Sep 19 13:01:39 2023 as: nmap -p88,135,139,389,445,464,593,636,1337,1433,49152,49153,49154,49155,49157,49158,50255 -sCV -oN lognmap 10.10.10.52
+Nmap scan report for 10.10.10.52
+Host is up (0.12s latency).
+
+PORT      STATE SERVICE      VERSION
+88/tcp    open  kerberos-sec Microsoft Windows Kerberos (server time: 2023-09-19 18:02:05Z)
+135/tcp   open  msrpc        Microsoft Windows RPC
+139/tcp   open  netbios-ssn  Microsoft Windows netbios-ssn
+389/tcp   open  ldap         Microsoft Windows Active Directory LDAP (Domain: htb.local, Site: Default-First-Site-Name)
+445/tcp   open  ÷ Â‡U       Windows Server 2008 R2 Standard 7601 Service Pack 1 microsoft-ds (workgroup: HTB)
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http   Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped
+1337/tcp  open  http         Microsoft IIS httpd 7.5
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/7.5
+|_http-title: IIS7
+1433/tcp  open  ms-sql-s     Microsoft SQL Server 2014 12.00.2000.00; RTM
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Not valid before: 2023-09-19T18:00:53
+|_Not valid after:  2053-09-19T18:00:53
+|_ssl-date: 2023-09-19T18:03:10+00:00; +5s from scanner time.
+49152/tcp open  msrpc        Microsoft Windows RPC
+49153/tcp open  msrpc        Microsoft Windows RPC
+49154/tcp open  msrpc        Microsoft Windows RPC
+49155/tcp open  msrpc        Microsoft Windows RPC
+49157/tcp open  ncacn_http   Microsoft Windows RPC over HTTP 1.0
+49158/tcp open  msrpc        Microsoft Windows RPC
+50255/tcp open  ms-sql-s     Microsoft SQL Server 2014 12.00.2000.00; RTM
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Not valid before: 2023-09-19T18:00:53
+|_Not valid after:  2053-09-19T18:00:53
+|_ssl-date: 2023-09-19T18:03:10+00:00; +5s from scanner time.
+Service Info: Host: MANTIS; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb-os-discovery: 
+|   OS: Windows Server 2008 R2 Standard 7601 Service Pack 1 (Windows Server 2008 R2 Standard 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_server_2008::sp1
+|   Computer name: mantis
+|   NetBIOS computer name: MANTIS\x00
+|   Domain name: htb.local
+|   Forest name: htb.local
+|   FQDN: mantis.htb.local
+|_  System time: 2023-09-19T14:03:02-04:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: required
+| smb2-time: 
+|   date: 2023-09-19T18:03:04
+|_  start_date: 2023-09-19T18:00:43
+|_clock-skew: mean: 48m05s, deviation: 1h47m21s, median: 4s
+| smb2-security-mode: 
+|   2:1:0: 
+|_    Message signing enabled and required
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Sep 19 13:03:07 2023 -- 1 IP address (1 host up) scanned in 87.86 seconds

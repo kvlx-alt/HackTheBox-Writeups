@@ -1,0 +1,17 @@
+Target: http://10.10.10.104/FUZZ
+Total requests: 220546
+==================================================================
+ID    Response   Lines      Word         Chars          Request    
+==================================================================
+02302:  C=302      3 L	       8 W	    157 Ch	  "remote"
+06990:  C=400     80 L	     276 W	   3420 Ch	  "*checkout*"
+15449:  C=400     80 L	     276 W	   3420 Ch	  "*docroot*"
+15773:  C=301      1 L	      10 W	    147 Ch	  "mvc"
+16399:  C=400     80 L	     276 W	   3420 Ch	  "*"
+22957:  C=400     80 L	     276 W	   3420 Ch	  "http%3A%2F%2Fwww"
+31853:  C=400     80 L	     276 W	   3420 Ch	  "http%3A"
+
+Total time: 0
+Processed Requests: 31940
+Filtered Requests: 31933
+Requests/sec.: 0
