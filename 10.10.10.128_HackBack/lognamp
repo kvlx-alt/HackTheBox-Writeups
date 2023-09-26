@@ -1,0 +1,76 @@
+# Nmap 7.94 scan initiated Mon Sep 25 23:05:45 2023 as: nmap -p80,6666,64831 -sCV -oN lognamp 10.10.10.128
+Nmap scan report for 10.10.10.128
+Host is up (0.12s latency).
+
+PORT      STATE SERVICE     VERSION
+80/tcp    open  http        Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: IIS Windows Server
+6666/tcp  open  http        Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Site doesn't have a title.
+64831/tcp open  ssl/unknown
+| fingerprint-strings: 
+|   GenericLines, Help, Kerberos, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 302 Found
+|     Content-Type: text/html; charset=utf-8
+|     Location: /login?next=%2F
+|     Set-Cookie: _gorilla_csrf=MTY5NTcyNjM5NXxJa3BVV0c1d1ZYZHFTVU12V0dOU2IwVTJWRXRsWVVodFdVaGFORmxHV21sSWEwSTVZUzlQYkZGSk9FRTlJZ289fLlZqM1WFHQmlmELylnSS1bjKy9Ji-vYsk-O9VlHTR8v; HttpOnly; Secure
+|     Vary: Accept-Encoding
+|     Vary: Cookie
+|     Date: Tue, 26 Sep 2023 11:06:35 GMT
+|     Content-Length: 38
+|     href="/login?next=%2F">Found</a>.
+|   HTTPOptions: 
+|     HTTP/1.0 302 Found
+|     Location: /login?next=%2F
+|     Set-Cookie: _gorilla_csrf=MTY5NTcyNjM5NnxJa1JPUzNSRmRuWmtURVV6VkRoMVNrbGxWME16VTFkemVqbDNTVEpaT1dKcGNVSktZa05FWjJVck5IYzlJZ289fMoyzssggDRkWaRezFTS181OjAvygat5cE_WowZfYKIG; HttpOnly; Secure
+|     Vary: Accept-Encoding
+|     Vary: Cookie
+|     Date: Tue, 26 Sep 2023 11:06:36 GMT
+|_    Content-Length: 0
+| ssl-cert: Subject: organizationName=Gophish
+| Not valid before: 2018-11-22T03:49:52
+|_Not valid after:  2028-11-19T03:49:52
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port64831-TCP:V=7.94%T=SSL%I=7%D=9/25%Time=651258B9%P=x86_64-pc-linux-g
+SF:nu%r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Typ
+SF:e:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x
+SF:20Bad\x20Request")%r(GetRequest,19B,"HTTP/1\.0\x20302\x20Found\r\nConte
+SF:nt-Type:\x20text/html;\x20charset=utf-8\r\nLocation:\x20/login\?next=%2
+SF:F\r\nSet-Cookie:\x20_gorilla_csrf=MTY5NTcyNjM5NXxJa3BVV0c1d1ZYZHFTVU12V
+SF:0dOU2IwVTJWRXRsWVVodFdVaGFORmxHV21sSWEwSTVZUzlQYkZGSk9FRTlJZ289fLlZqM1W
+SF:FHQmlmELylnSS1bjKy9Ji-vYsk-O9VlHTR8v;\x20HttpOnly;\x20Secure\r\nVary:\x
+SF:20Accept-Encoding\r\nVary:\x20Cookie\r\nDate:\x20Tue,\x2026\x20Sep\x202
+SF:023\x2011:06:35\x20GMT\r\nContent-Length:\x2038\r\n\r\n<a\x20href=\"/lo
+SF:gin\?next=%2F\">Found</a>\.\n\n")%r(HTTPOptions,14C,"HTTP/1\.0\x20302\x
+SF:20Found\r\nLocation:\x20/login\?next=%2F\r\nSet-Cookie:\x20_gorilla_csr
+SF:f=MTY5NTcyNjM5NnxJa1JPUzNSRmRuWmtURVV6VkRoMVNrbGxWME16VTFkemVqbDNTVEpaT
+SF:1dKcGNVSktZa05FWjJVck5IYzlJZ289fMoyzssggDRkWaRezFTS181OjAvygat5cE_WowZf
+SF:YKIG;\x20HttpOnly;\x20Secure\r\nVary:\x20Accept-Encoding\r\nVary:\x20Co
+SF:okie\r\nDate:\x20Tue,\x2026\x20Sep\x202023\x2011:06:36\x20GMT\r\nConten
+SF:t-Length:\x200\r\n\r\n")%r(RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x20R
+SF:equest\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\
+SF:x20close\r\n\r\n400\x20Bad\x20Request")%r(Help,67,"HTTP/1\.1\x20400\x20
+SF:Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConn
+SF:ection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(SSLSessionReq,67,"HTT
+SF:P/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20char
+SF:set=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Term
+SF:inalServerCookie,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type
+SF::\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x2
+SF:0Bad\x20Request")%r(TLSSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Reques
+SF:t\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20cl
+SF:ose\r\n\r\n400\x20Bad\x20Request")%r(Kerberos,67,"HTTP/1\.1\x20400\x20B
+SF:ad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConne
+SF:ction:\x20close\r\n\r\n400\x20Bad\x20Request");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep 25 23:07:53 2023 -- 1 IP address (1 host up) scanned in 127.26 seconds
