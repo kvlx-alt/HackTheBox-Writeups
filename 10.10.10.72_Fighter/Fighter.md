@@ -1,3 +1,20 @@
+**Skills Required**
+● Intermediate knowledge of Web
+application enumeration techniques
+● Intermediate knowledge of SQL
+injection techniques
+● Intermediate knowledge of Windows
+● Intermediate knowledge of
+disassembly
+**Skills Learned**
+● Advanced SQL injection technique and
+blacklist bypassing
+● AppLocker bypassing
+● Command-line obfuscation
+● Exploit selection and modification
+● Post-exploitation enumeration
+● Reverse engineering
+
 Port (80)
 
 this machine only has port 80 open, so it's all about enumerate and try to exploit some vulnerabilities on the website

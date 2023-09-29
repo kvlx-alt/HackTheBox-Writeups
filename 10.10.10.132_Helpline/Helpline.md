@@ -1,3 +1,11 @@
+**Skills Required**
+● Enumeration
+● Powershell
+**Skills Learned**
+● XXE
+● Applocker enumeration
+● Event log enumeration
+
 Looport 5985 (winrm) Remote management users
 port 445 (smb)
 port 8080 (http)

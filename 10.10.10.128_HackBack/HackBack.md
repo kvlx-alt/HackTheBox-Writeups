@@ -1,3 +1,13 @@
+**Skills Required**
+● Enumeration
+● Reverse Engineering
+● Modifying exploit code
+**Skills Learned**
+● ASPX tunneling
+● Named pipe impersonation
+● Exploiting arbitrary writes
+
+
 Initially, we began by enumerating port 80(HTTP)
 
 ``` bash

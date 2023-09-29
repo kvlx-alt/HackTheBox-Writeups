@@ -1,0 +1,17 @@
+# Nmap 7.94 scan initiated Tue Sep 26 17:31:50 2023 as: nmap -p80,135,3306,49666 -sCV -oN lognmap 10.10.10.167
+Nmap scan report for 10.10.10.167
+Host is up (0.099s latency).
+
+PORT      STATE SERVICE VERSION
+80/tcp    open  http    Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: Fidelity
+135/tcp   open  msrpc   Microsoft Windows RPC
+3306/tcp  open  mysql?
+49666/tcp open  msrpc   Microsoft Windows RPC
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Sep 26 17:33:05 2023 -- 1 IP address (1 host up) scanned in 74.91 seconds

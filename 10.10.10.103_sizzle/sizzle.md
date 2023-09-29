@@ -1,3 +1,11 @@
+**Skills Required**
+● AD Enumeration
+● Mimikatz usage
+**Skills Learned**
+● Stealing hashes
+● Passwordless login
+● Kerberoasting
+● DCSync
 
 Port 21 (FTP)
 Port 5985 WinRM

@@ -1,3 +1,8 @@
+**Skills Required**
+Basic Web Knowledge
+**Skills Learned**
+Leveraging PostgreSQL SQL Injection for RCE
+Docker Toolbox Exploitation
 
 Port 21 FTP
 Port 22 SSH

@@ -1,3 +1,11 @@
+
+**Skills Required**
+Enumeration
+Offline password cracking
+**Skills Learned**
+Hash capturing
+Meterpreter exploitation
+
 ### Step 1: Initial Reconnaissance
 
 Start by gathering information about the target machine. You can use tools like `nmap` to scan for open ports and services. In this case, we've found three open ports: 5985 (winrm), 445 (smb), and 80 (http).

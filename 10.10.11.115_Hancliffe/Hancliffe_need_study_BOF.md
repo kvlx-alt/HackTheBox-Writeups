@@ -1,3 +1,14 @@
+
+**Skills Required**
+Enumeration
+Searching common vulnerabilities and publicly available exploits
+Pivoting
+Basic knowledge of binary exploitation techniques
+**Skills Learned**
+Techniques for bypassing Nginx rules
+Decrypting Mozilla passwords
+Socket reuse in binary exploitation
+
 port 80 (http)
 port 8000 (http)
 port 9999 (netcat connection(app shell))

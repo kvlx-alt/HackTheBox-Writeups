@@ -1,3 +1,11 @@
+**Skills Required**
+Basic Knowledge of Windows
+Basic Knowledge of Active Directory
+**Skills Learned**
+Leveraging Backup Operators group membership
+Dumping credentials from LSASS
+Anonymous / Guest Enumeration
+
 puerto 88 kerberos, 389 ldap, 445 smb, 5985 administracion remota de windows
 
 Como el puerto 445 esta abierto, usar crackmapexec para encontrar mas informacion sobre la maquina victima

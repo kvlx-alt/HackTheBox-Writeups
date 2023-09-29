@@ -1,3 +1,14 @@
+**Skills Required**
+● Intermediate/Advanced knowledge of
+Windows
+● Intermediate PowerShell knowledge
+**Skills Learned**
+● Exploiting Server Side Request
+Forgery
+● Exploiting blind command injection
+● Finding and reading alternate data
+streams
+
 Port 62696 (http)
 
 Check the HTTP service, which is a website, with WhatWeb:

@@ -1,3 +1,12 @@
+**Skills Required**
+● Enumeration
+● Scripting
+● Basic Cryptography
+**Skills Learned**
+● Java Deserialization
+● UAC bypass
+
+
 Using crackmapexec, Identifying the Machine, smbmap, Listing Shared Resources, Downloading Files, smbclient, Decrypting LUKS-Encrypted Backup, bruteforce-luks, cryptsetup, Decrypting and Exploiting Web.xml Information, Privilege Escalation, PowerShell Payload, Escalating Privileges as User 'batman', Secure Credential Object, Accessing Administrator's Files, Retrieve the Administrator Flag, SMB and Cybersecurity Tasks
 
 1. **Using crackmapexec to Identify the Machine:**

@@ -1,3 +1,13 @@
+**Skills Required**
+● Intermediate/advanced knowledge of
+Windows Server
+● Knowledge of domain controllers
+**Skills Learned**
+● Enumerating SQL Server Express
+databases
+● Exploiting domain controllers and
+Kerberos
+
 port 88 (jkerberos)
 port 445 (smb)
 port 135 (ldap)
