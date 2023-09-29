@@ -1,3 +1,11 @@
+**Skills Required**
+Windows Enumeration
+Web Enumeration
+**Skills Learned**
+Exploit modification
+Server side request forgery
+Applocker policies
+Always install everything misconfiguration
 
 -----------
 

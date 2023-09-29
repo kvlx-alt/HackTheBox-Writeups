@@ -1,3 +1,9 @@
+**Skills Required**
+● Enumeration
+**Skills Learned**
+● Extracting passwords from SAM
+● Exploiting MRemoteNG
+
 SMB Exploitation, Enumerating SMB Shares, VHD Exploration, Exploiting mRemoteNG, Access via Evil-WinRM
 
 ---------------------

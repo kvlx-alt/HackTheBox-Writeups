@@ -1,4 +1,13 @@
-
+**Skills Required**
+● Basic knowledge of SQL injection
+techniques
+● Basic knowledge of Windows
+**Skills Learned**
+● Using xp_dirtree to leak the SQL Server
+service account NetNTLM hash
+● Identification of installed programs via
+Windows Registry enumeration
+● Reverse shell payload creation
 
 Port 80 (http)
 port 443 (https)

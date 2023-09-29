@@ -1,3 +1,12 @@
+**Skills Required**
+Basic Knowledge of Windows
+Basic Knowledge of Active Directory
+OWASP Top 10
+**Skills Learned**
+Jenkins Exploitation
+AD Enumeration
+ForceChangePassword Abuse
+
 I listed several ports (80,5985, and 8080)
 ```
 Port 80 (http)

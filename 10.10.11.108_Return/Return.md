@@ -1,3 +1,9 @@
+**Skills Required**
+Basic Windows Knowledge
+Beginner Active Directory Knowledge
+**Skills Learned**
+Network Printer Abuse
+Server Operators Group Abuse
 
 **Key Concepts:** Windows Remote Management (WinRM), SMB (Server Message Block), Enumeration, Printer Admin Panel, Privilege Escalation, Server Operators Group.
 

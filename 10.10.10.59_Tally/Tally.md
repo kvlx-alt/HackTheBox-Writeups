@@ -1,3 +1,16 @@
+
+**Skills Required**
+● Intermediate/advanced knowledge of
+Windows
+● Basic understanding of C and compiler
+flags
+**Skills Learned**
+● Enumerating Sharepoint
+● Exploiting MSSQL
+● Windows Defender/AV evasion
+techniques
+● Exploit modification
+
 port 445(smb)
 port 5985(winrm)
 port 21 (ftp)

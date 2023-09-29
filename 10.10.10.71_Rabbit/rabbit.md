@@ -1,3 +1,16 @@
+**Skills Required**
+● Basic knowledge of web application
+vulnerabilities and associated tools
+● Basic Windows knowledge
+**Skills Learned**
+● Open Office macro modification
+● Payload creation
+● Authorisation bypass
+● SQL injection identification and
+exploitation
+● Windows services and file system
+permission enumeration
+
 sqlinjection, macro ,Messaging Application, Administrator Request, Exploiting Requests, Poisoned Document, System Access, User Files, Root Directory, Write Permissions, PHP File, Command Execution, Downloading Files
 
 **Step 1: Enumerate SMB Services**

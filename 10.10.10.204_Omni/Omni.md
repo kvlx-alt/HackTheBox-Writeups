@@ -1,3 +1,12 @@
+**Skills Required**
+Web Enumeration
+Windows Enumeration
+**Skills Learned**
+Windows IoT Core Exploitation
+Registry Hive Hash Retrieval & Cracking
+Powershell Credentials Enumeration
+
+
 ```
 ```
 Curl Web Headers, SirepRAT, PowerShell, Copying Registry Hives, Transfer Backups, Impacket's smbserver, Dump Password Hashes, John the Ripper.

@@ -1,4 +1,12 @@
 
+**Skills Required**
+Basic Windows Knowledge
+**Skills Learned**
+Printer Enumeration
+Reset Expired Passwords
+SeLoadDriver Privilege Abuse
+Password Spraying
+
 ---------------
 rpcclient, Enumerate Printer Service, cewl, crackmapexec, smb, smbpasswd, Connect with rpcclient, enumdomusers, enumprinters, Reuse crackmapexec, winrm, Privilege Escalation, Load and unload device drivers, EoPLoadDriver, capcom.sys, exploitcapcom, Generic-AppLockerbypasses, reverse.exe, msfvenom, LoadDriver.exe, ExploitCapcom.exe, reverse shell, administrator, Finding the flag.
 

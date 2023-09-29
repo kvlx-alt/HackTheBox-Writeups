@@ -1,3 +1,10 @@
+**Skills Required**
+Enumeration
+Source Code Review
+**Skills Learned**
+.NET Development
+SMB Enumeration
+
 youpentesting, enumeration, SMB, crackmapexec, smbmap, smbclient, mount, resources, credentials, decrypt, access, privileges, escalation, system, psexec
 
 **Enumerating SMB Shares and Exploiting Them**

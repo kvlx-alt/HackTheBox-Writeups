@@ -1,3 +1,11 @@
+**Skills Required**
+Password spraying
+Password cracking
+Basic Active Directory knowledge
+**Skills Learned**
+ADIDNS abuse
+ReadGMSAPassword abuse
+Constrained delegation abuse
 
 - Open port 80
 - Port 88 is Kerberos

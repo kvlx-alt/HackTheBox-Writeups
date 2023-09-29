@@ -1,3 +1,14 @@
+**Skills Required**
+● Intermediate knowledge of Windows
+● Knowledge of basic web fuzzing
+techniques
+**Skills Learned**
+● Obtaining shell through Jenkins
+● Techniques for bypassing Windows
+Defender
+● Pass-the-hash attacks
+● Enumerating alternate data streams
+
 
 Crackmapexec, smbmap, Web Fuzzing, Jenkins, Pass-the-Hash Attack, KeePass, Juicy Potato Privilege Escalation, Alternative Data Streams.
 keepass2john, john (John the Ripper)
