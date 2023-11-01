@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ldap-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <server>
+      <host>dc01.manager.htb</host>
+      <open-port enabled="true">389</open-port>
+      <secure-port enabled="false">0</secure-port>
+      <search-base>dc=manager,dc=htb</search-base>
+      <server-type>microsoft</server-type>
+      <access-user>
+         <user>raven@manager.htb</user>
+         <password>R4v3nBe5tD3veloP3r!123</password>
+      </access-user>
+      <uid-attribute>cn</uid-attribute>
+   </server>
+   <search type="full">
+      <dir-list>
+         <dir>cn=Operator1,CN=users,dc=manager,dc=htb</dir>
+      </dir-list>
+   </search>
+</ldap-conf>

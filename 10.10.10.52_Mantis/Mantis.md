@@ -1,4 +1,4 @@
-**Skills Required**
+s**Skills Required**
 ● Intermediate/advanced knowledge of
 Windows Server
 ● Knowledge of domain controllers

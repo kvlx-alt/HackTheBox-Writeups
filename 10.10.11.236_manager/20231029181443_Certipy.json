@@ -1,0 +1,1799 @@
+{
+  "Certificate Authorities": {
+    "0": {
+      "CA Name": "manager-DC01-CA",
+      "DNS Name": "dc01.manager.htb",
+      "Certificate Subject": "CN=manager-DC01-CA, DC=manager, DC=htb",
+      "Certificate Serial Number": "5150CE6EC048749448C7390A52F264BB",
+      "Certificate Validity Start": "2023-07-27 10:21:05+00:00",
+      "Certificate Validity End": "2122-07-27 10:31:04+00:00",
+      "Web Enrollment": "Disabled",
+      "User Specified SAN": "Disabled",
+      "Request Disposition": "Issue",
+      "Enforce Encryption for Requests": "Enabled",
+      "Permissions": {
+        "Owner": "MANAGER.HTB\\Administrators",
+        "Access Rights": {
+          "512": [
+            "MANAGER.HTB\\Operator",
+            "MANAGER.HTB\\Authenticated Users",
+            "MANAGER.HTB\\Raven"
+          ],
+          "2": [
+            "MANAGER.HTB\\Administrators",
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "1": [
+            "MANAGER.HTB\\Administrators",
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins",
+            "MANAGER.HTB\\Raven"
+          ]
+        }
+      },
+      "[!] Vulnerabilities": {
+        "ESC7": "'MANAGER.HTB\\\\Raven' has dangerous permissions"
+      }
+    }
+  },
+  "Certificate Templates": {
+    "0": {
+      "Template Name": "KerberosAuthentication",
+      "Display Name": "Kerberos Authentication",
+      "Certificate Authorities": [
+        "manager-DC01-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectAltRequireDns",
+        "SubjectAltRequireDomainDns"
+      ],
+      "Enrollment Flag": [
+        "AutoEnrollment"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Client Authentication",
+        "Server Authentication",
+        "Smart Card Logon",
+        "KDC Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Enterprise Read-only Domain Controllers",
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Domain Controllers",
+            "MANAGER.HTB\\Enterprise Admins",
+            "MANAGER.HTB\\Enterprise Domain Controllers"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "1": {
+      "Template Name": "OCSPResponseSigning",
+      "Display Name": "OCSP Response Signing",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectRequireDnsAsCn",
+        "SubjectAltRequireDns"
+      ],
+      "Enrollment Flag": [
+        "Norevocationinfoinissuedcerts",
+        "AddOcspNocheck"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "OCSP Signing"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "2 weeks",
+      "Renewal Period": "2 days",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "2": {
+      "Template Name": "RASAndIASServer",
+      "Display Name": "RAS and IAS Server",
+      "Enabled": false,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectRequireCommonName",
+        "SubjectAltRequireDns"
+      ],
+      "Enrollment Flag": [
+        "AutoEnrollment"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Client Authentication",
+        "Server Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins",
+            "MANAGER.HTB\\RAS and IAS Servers"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "3": {
+      "Template Name": "Workstation",
+      "Display Name": "Workstation Authentication",
+      "Enabled": false,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectAltRequireDns"
+      ],
+      "Enrollment Flag": [
+        "AutoEnrollment"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Client Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Domain Computers",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "4": {
+      "Template Name": "DirectoryEmailReplication",
+      "Display Name": "Directory Email Replication",
+      "Certificate Authorities": [
+        "manager-DC01-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectAltRequireDns",
+        "SubjectAltRequireDirectoryGuid"
+      ],
+      "Enrollment Flag": [
+        "AutoEnrollment",
+        "PublishToDs",
+        "IncludeSymmetricAlgorithms"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Directory Service Email Replication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Enterprise Read-only Domain Controllers",
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Domain Controllers",
+            "MANAGER.HTB\\Enterprise Admins",
+            "MANAGER.HTB\\Enterprise Domain Controllers"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "5": {
+      "Template Name": "DomainControllerAuthentication",
+      "Display Name": "Domain Controller Authentication",
+      "Certificate Authorities": [
+        "manager-DC01-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectAltRequireDns"
+      ],
+      "Enrollment Flag": [
+        "AutoEnrollment"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Client Authentication",
+        "Server Authentication",
+        "Smart Card Logon"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Enterprise Read-only Domain Controllers",
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Domain Controllers",
+            "MANAGER.HTB\\Enterprise Admins",
+            "MANAGER.HTB\\Enterprise Domain Controllers"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "6": {
+      "Template Name": "KeyRecoveryAgent",
+      "Display Name": "Key Recovery Agent",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectRequireDirectoryPath",
+        "SubjectAltRequireUpn"
+      ],
+      "Enrollment Flag": [
+        "AutoEnrollment",
+        "PublishToKraContainer",
+        "PendAllRequests",
+        "IncludeSymmetricAlgorithms"
+      ],
+      "Private Key Flag": [
+        "ExportableKey"
+      ],
+      "Extended Key Usage": [
+        "Key Recovery Agent"
+      ],
+      "Requires Manager Approval": true,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "7": {
+      "Template Name": "CAExchange",
+      "Display Name": "CA Exchange",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        "EnrolleeSuppliesSubject"
+      ],
+      "Enrollment Flag": [
+        "IncludeSymmetricAlgorithms"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Private Key Archival"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "1 week",
+      "Renewal Period": "1 day",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "8": {
+      "Template Name": "CrossCA",
+      "Display Name": "Cross Certification Authority",
+      "Enabled": false,
+      "Client Authentication": true,
+      "Enrollment Agent": true,
+      "Any Purpose": true,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        "EnrolleeSuppliesSubject"
+      ],
+      "Enrollment Flag": [
+        "PublishToDs"
+      ],
+      "Private Key Flag": [
+        "ExportableKey"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 1,
+      "Validity Period": "5 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "9": {
+      "Template Name": "ExchangeUserSignature",
+      "Display Name": "Exchange Signature Only",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        "EnrolleeSuppliesSubject"
+      ],
+      "Enrollment Flag": [
+        "None"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Secure Email"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "10": {
+      "Template Name": "ExchangeUser",
+      "Display Name": "Exchange User",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        "EnrolleeSuppliesSubject"
+      ],
+      "Enrollment Flag": [
+        "IncludeSymmetricAlgorithms"
+      ],
+      "Private Key Flag": [
+        "ExportableKey"
+      ],
+      "Extended Key Usage": [
+        "Secure Email"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "11": {
+      "Template Name": "CEPEncryption",
+      "Display Name": "CEP Encryption",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": true,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        "EnrolleeSuppliesSubject"
+      ],
+      "Enrollment Flag": [
+        "None"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Certificate Request Agent"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "12": {
+      "Template Name": "OfflineRouter",
+      "Display Name": "Router (Offline request)",
+      "Enabled": false,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        "EnrolleeSuppliesSubject"
+      ],
+      "Enrollment Flag": [
+        "None"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Client Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "13": {
+      "Template Name": "IPSECIntermediateOffline",
+      "Display Name": "IPSec (Offline request)",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        "EnrolleeSuppliesSubject"
+      ],
+      "Enrollment Flag": [
+        "None"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "IP security IKE intermediate"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "14": {
+      "Template Name": "IPSECIntermediateOnline",
+      "Display Name": "IPSec",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectRequireDnsAsCn",
+        "SubjectAltRequireDns"
+      ],
+      "Enrollment Flag": [
+        "AutoEnrollment"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "IP security IKE intermediate"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Domain Computers",
+            "MANAGER.HTB\\Domain Controllers",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "15": {
+      "Template Name": "SubCA",
+      "Display Name": "Subordinate Certification Authority",
+      "Certificate Authorities": [
+        "manager-DC01-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": true,
+      "Enrollment Agent": true,
+      "Any Purpose": true,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        "EnrolleeSuppliesSubject"
+      ],
+      "Enrollment Flag": [
+        "None"
+      ],
+      "Private Key Flag": [
+        "ExportableKey"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "5 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "16": {
+      "Template Name": "CA",
+      "Display Name": "Root Certification Authority",
+      "Enabled": false,
+      "Client Authentication": true,
+      "Enrollment Agent": true,
+      "Any Purpose": true,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        "EnrolleeSuppliesSubject"
+      ],
+      "Enrollment Flag": [
+        "None"
+      ],
+      "Private Key Flag": [
+        "ExportableKey"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "5 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "17": {
+      "Template Name": "WebServer",
+      "Display Name": "Web Server",
+      "Certificate Authorities": [
+        "manager-DC01-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        "EnrolleeSuppliesSubject"
+      ],
+      "Enrollment Flag": [
+        "None"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Server Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "18": {
+      "Template Name": "DomainController",
+      "Display Name": "Domain Controller",
+      "Certificate Authorities": [
+        "manager-DC01-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectRequireDnsAsCn",
+        "SubjectAltRequireDns",
+        "SubjectAltRequireDirectoryGuid"
+      ],
+      "Enrollment Flag": [
+        "AutoEnrollment",
+        "PublishToDs",
+        "IncludeSymmetricAlgorithms"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Client Authentication",
+        "Server Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Enterprise Read-only Domain Controllers",
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Domain Controllers",
+            "MANAGER.HTB\\Enterprise Admins",
+            "MANAGER.HTB\\Enterprise Domain Controllers"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "19": {
+      "Template Name": "Machine",
+      "Display Name": "Computer",
+      "Certificate Authorities": [
+        "manager-DC01-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectRequireDnsAsCn",
+        "SubjectAltRequireDns"
+      ],
+      "Enrollment Flag": [
+        "AutoEnrollment"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Client Authentication",
+        "Server Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Domain Computers",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "20": {
+      "Template Name": "MachineEnrollmentAgent",
+      "Display Name": "Enrollment Agent (Computer)",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": true,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectRequireDnsAsCn",
+        "SubjectAltRequireDns"
+      ],
+      "Enrollment Flag": [
+        "AutoEnrollment"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Certificate Request Agent"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "21": {
+      "Template Name": "EnrollmentAgentOffline",
+      "Display Name": "Exchange Enrollment Agent (Offline request)",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": true,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        "EnrolleeSuppliesSubject"
+      ],
+      "Enrollment Flag": [
+        "None"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Certificate Request Agent"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "22": {
+      "Template Name": "EnrollmentAgent",
+      "Display Name": "Enrollment Agent",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": true,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectRequireDirectoryPath",
+        "SubjectAltRequireUpn"
+      ],
+      "Enrollment Flag": [
+        "AutoEnrollment"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Certificate Request Agent"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "2 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "23": {
+      "Template Name": "CTLSigning",
+      "Display Name": "Trust List Signing",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectRequireDirectoryPath",
+        "SubjectAltRequireUpn"
+      ],
+      "Enrollment Flag": [
+        "AutoEnrollment"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Microsoft Trust List Signing"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "24": {
+      "Template Name": "CodeSigning",
+      "Display Name": "Code Signing",
+      "Enabled": false,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectRequireDirectoryPath",
+        "SubjectAltRequireUpn"
+      ],
+      "Enrollment Flag": [
+        "AutoEnrollment"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Code Signing"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "25": {
+      "Template Name": "EFSRecovery",
+      "Display Name": "EFS Recovery Agent",
+      "Certificate Authorities": [
+        "manager-DC01-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectRequireDirectoryPath",
+        "SubjectAltRequireUpn"
+      ],
+      "Enrollment Flag": [
+        "AutoEnrollment",
+        "IncludeSymmetricAlgorithms"
+      ],
+      "Private Key Flag": [
+        "ExportableKey"
+      ],
+      "Extended Key Usage": [
+        "File Recovery"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "5 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "26": {
+      "Template Name": "Administrator",
+      "Display Name": "Administrator",
+      "Certificate Authorities": [
+        "manager-DC01-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectRequireDirectoryPath",
+        "SubjectRequireEmail",
+        "SubjectAltRequireEmail",
+        "SubjectAltRequireUpn"
+      ],
+      "Enrollment Flag": [
+        "AutoEnrollment",
+        "PublishToDs",
+        "IncludeSymmetricAlgorithms"
+      ],
+      "Private Key Flag": [
+        "ExportableKey"
+      ],
+      "Extended Key Usage": [
+        "Microsoft Trust List Signing",
+        "Encrypting File System",
+        "Secure Email",
+        "Client Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "27": {
+      "Template Name": "EFS",
+      "Display Name": "Basic EFS",
+      "Certificate Authorities": [
+        "manager-DC01-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": false,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectRequireDirectoryPath",
+        "SubjectAltRequireUpn"
+      ],
+      "Enrollment Flag": [
+        "AutoEnrollment",
+        "PublishToDs",
+        "IncludeSymmetricAlgorithms"
+      ],
+      "Private Key Flag": [
+        "ExportableKey"
+      ],
+      "Extended Key Usage": [
+        "Encrypting File System"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Domain Users",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "28": {
+      "Template Name": "SmartcardLogon",
+      "Display Name": "Smartcard Logon",
+      "Enabled": false,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectRequireDirectoryPath",
+        "SubjectAltRequireUpn"
+      ],
+      "Enrollment Flag": [
+        "None"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Client Authentication",
+        "Smart Card Logon"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "29": {
+      "Template Name": "ClientAuth",
+      "Display Name": "Authenticated Session",
+      "Enabled": false,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectRequireDirectoryPath",
+        "SubjectAltRequireUpn"
+      ],
+      "Enrollment Flag": [
+        "AutoEnrollment"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Client Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Domain Users",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "30": {
+      "Template Name": "SmartcardUser",
+      "Display Name": "Smartcard User",
+      "Enabled": false,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectRequireDirectoryPath",
+        "SubjectRequireEmail",
+        "SubjectAltRequireEmail",
+        "SubjectAltRequireUpn"
+      ],
+      "Enrollment Flag": [
+        "PublishToDs",
+        "IncludeSymmetricAlgorithms"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Secure Email",
+        "Client Authentication",
+        "Smart Card Logon"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "31": {
+      "Template Name": "UserSignature",
+      "Display Name": "User Signature Only",
+      "Enabled": false,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectRequireDirectoryPath",
+        "SubjectRequireEmail",
+        "SubjectAltRequireEmail",
+        "SubjectAltRequireUpn"
+      ],
+      "Enrollment Flag": [
+        "AutoEnrollment"
+      ],
+      "Private Key Flag": [
+        "AttestNone"
+      ],
+      "Extended Key Usage": [
+        "Secure Email",
+        "Client Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Domain Users",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    },
+    "32": {
+      "Template Name": "User",
+      "Display Name": "User",
+      "Certificate Authorities": [
+        "manager-DC01-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": false,
+      "Certificate Name Flag": [
+        "SubjectRequireDirectoryPath",
+        "SubjectRequireEmail",
+        "SubjectAltRequireEmail",
+        "SubjectAltRequireUpn"
+      ],
+      "Enrollment Flag": [
+        "AutoEnrollment",
+        "PublishToDs",
+        "IncludeSymmetricAlgorithms"
+      ],
+      "Private Key Flag": [
+        "ExportableKey"
+      ],
+      "Extended Key Usage": [
+        "Encrypting File System",
+        "Secure Email",
+        "Client Authentication"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Validity Period": "1 year",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Domain Users",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "MANAGER.HTB\\Enterprise Admins",
+          "Write Owner Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ],
+          "Write Property Principals": [
+            "MANAGER.HTB\\Domain Admins",
+            "MANAGER.HTB\\Enterprise Admins"
+          ]
+        }
+      }
+    }
+  }
+}
