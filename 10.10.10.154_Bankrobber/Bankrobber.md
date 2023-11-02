@@ -4,7 +4,10 @@ JavaScript XSS Payloads
 SQL Injection
 **Skills Learned**
 Command Injection
+<<<<<<< HEAD
 	File read through SQLi
+=======
+File read through SQLi
 Buffer Overflow
 
 Port 80 (http)
